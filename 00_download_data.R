@@ -16,7 +16,8 @@ if(!file.exists("./data")) {
     "munichre.txt",
     "umlaufrenditen.txt",
     "libor.txt",
-    "ifo_zeitreihen.txt"
+    "ifo_zeitreihen.txt",
+    "statistikv8_0.1.zip" # R package
   )
   
   dir.create("./data")
