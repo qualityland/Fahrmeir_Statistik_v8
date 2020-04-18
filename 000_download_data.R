@@ -1,6 +1,6 @@
 # download example data sets from the books website
-
-if(!file.exists("./data")) {
+ddir <- "./data"             # data directory
+if(!file.exists(ddir)) {
   
   baseUrl <- "https://chris.userweb.mwn.de/statistikbuch/"
   
@@ -20,9 +20,9 @@ if(!file.exists("./data")) {
     "statistikv8_0.1.zip" # R package
   )
   
-  dir.create("./data")
+  dir.create(ddir)
   
   for(f in files) {
-    download.file(paste0(baseUrl, f), destfile = paste0("./data/", f))
+    download.file(paste0(baseUrl, f), destfile = paste0(ddir, f))
   }
 }
